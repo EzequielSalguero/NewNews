@@ -1,0 +1,576 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family: titulo;
+	src:url(../FUENTES/../FUENTES/barcade.ttf);
+}
+
+@font-face{
+	font-family: icons;
+	src:url(../FUENTES/Byom-Icons-Trial.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+      font-family: 'Work Sans', sans-serif;
+}
+
+h2#donde {
+    text-align: center;
+}
+
+header{
+	width: 100%;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 30px;
+        align-items: center;
+}
+
+header h1{
+	text-align: left;
+	margin-left: 40px;
+	font-family: titulo;
+	font-size: 7.5vw;
+}
+
+header p#inicio {
+    text-align: center;
+    margin-bottom: 0;
+    display: none;
+}
+
+header img#logo {
+        margin-top: 2%;
+        margin-left: 5%;
+        width: 31vw;
+        height: 9vw;
+}
+
+header div.usuario{
+	display: inline-block;
+	margin-right: 5%;
+	color: #009DD9;
+	font-weight: 600;
+	margin-top: 4vw;
+}
+
+header div.usuario img{
+	width: 25px;
+}
+
+header #login{
+	margin: 5%;
+        text-align: center;
+}
+
+header section a:not(#reg){
+	display: inline-block;
+	text-decoration: none;
+	background-color: #009DD9;
+	color: #fff;
+	padding: 15px;
+	font-weight: 600;
+	font-size: 1.3vw;
+	border-bottom: 1px solid #4B8EA3;
+	border: solid 2px #009DD9;
+}
+
+header section a:not(#reg):hover{
+	border: inset 2px #009DD9;
+	color: #009DD9;
+	background-color: #fff;
+}
+
+/* Iniciar sesión*/
+header section {
+    position: relative;
+}
+
+header section div {
+    position: absolute;
+    width: 18vw;
+    right: 0;
+    background-color: #16B4DD;
+    border-radius: 4px 0 4px 4px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.21);
+}
+
+header section div form label {
+   font-size: 1.3vw; 
+}
+
+#mensaje{
+    color:white;
+    
+}
+
+header section div form input {
+    display: block;
+    margin-bottom: 10px;
+    color: #3E3E3E;
+    font-weight: 500;
+    margin: auto;
+    padding: 13px 0 13px 10px;
+    margin-bottom: 7px;
+    width: 16vw;
+    font-size: 1.3vw;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: solid 1px #009DD9;
+    border-radius: 3px;
+}
+
+
+
+header section div form input:focus {
+    outline:0px;
+    border-bottom: solid 3px #009DD9;
+}
+
+header section div form input[type='submit'] {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 42%;
+    border-radius: 5px;
+    background-color: #009DD9;
+    font-weight: bold;
+    padding: 7px 0px;
+    border: solid 2px #009DD9;
+}
+
+header section div form input[type='submit']:hover {
+    background-color: #fafcff;
+    border: inset 2px #009DD9;
+    color: #009DD9;
+}
+
+header section a {
+    text-decoration: none;
+    color:blue;
+}
+
+header section a:hover {
+    color:white;
+    text-decoration: underline;
+}
+
+/*MENU*/
+	
+ .menu{
+	display: none;
+	font-family: icons;
+}
+
+
+ nav{
+	min-width: 800px;
+	width: 100%;
+	margin: 10px auto;
+	background-color: #009DD9;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+ nav ul{
+	overflow: hidden;
+}
+
+nav ul li{
+	float: left;
+	list-style: none;
+}
+
+ nav ul li a{
+	color: white;
+	padding: 1.5vw;
+	text-decoration: none;
+	display: block;
+	font-size: 1.4vw;
+	/*line-height: 20px;*/
+        font-family: 'Work Sans', sans-serif;
+}
+
+
+ nav ul li a:hover{
+	background-color: #16B4DD;
+}
+
+ nav ul li:hover{
+	background-color: #16B4DD;
+}
+
+
+
+/* SUBMENU */
+ul.sub {
+  position: absolute;
+    width: 20%;
+    display: none;
+    border-radius: 0 0 4px 4px;
+    margin-top: 0px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.21);
+}
+
+
+
+ul.sub li {
+  float: none;
+  margin: 0;
+}
+
+ul.sub li a {
+  border-right: none;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+
+ul.sub li:last-child a {
+  border-bottom: none;
+}
+
+ul.sub li:hover{
+	display: block;
+}
+
+
+ul.sub li a:hover {
+    color: #050E21;
+    background: white;
+}
+
+
+nav ul li:hover ul {
+  display: block;
+  background: #16B4DD;
+}
+
+/*****************Noticias******************/
+section#notPrincDest article#notPrinc img#imgPrinc, section#notPrincDest article#notSelec img {
+    width: 45vw;
+    height: 25vw;
+}
+
+section#notPrincDest article#notPrinc {
+    width: 67vw;
+    text-align: center;
+}
+
+section#notPrincDest article#notSelec h4 {
+    text-align: left;
+}
+
+section#noticias article img, section#notPrincDest section#notDest article img {
+    width: 20vw;
+    height: 11vw;
+}
+
+section#noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 60px;
+}
+
+section#notPrincDest {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+section#notPrincDest section#notDest {
+    width: 20vmax;
+}
+
+section#notPrincDest section#notDest h1 {
+    text-align:center;
+}
+
+section#notPrincDest section#notDest article {
+    margin-bottom: 30px;
+    width: 20vw;
+}
+
+section#notPrincDest section#notDest article h2, section#noticias article h2, article#notPrinc h2 {
+    font-size: 1.5vmax;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+article#notPrinc h2 {
+    font-size: 1.8vmax;
+}
+
+section#notPrincDest section#notDest article a, section#noticias article a, article#notPrinc a {
+    text-decoration: none;
+    color:black;
+}
+
+section#notPrincDest section#notDest h1 {
+    font-size: 2vmax;
+    margin-bottom: 30px;
+}
+
+section#noticias article {
+    width: 20vw;
+    margin-bottom: 26px;
+}
+
+section#notPrincDest img, section#noticias img {
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+/*****************************NOTICIA SELECCIONADA*********************************/
+section#notPrincDest article#notSelec {
+    width: 67vw;
+}
+
+article#notSelec div#comentarios textArea {
+    display: block;
+} 
+
+/*********************NOTICIA BUSCADA****************************/
+section#notPrincDest section#notBusc {
+    width: 61vw;
+}
+
+section#notPrincDest section#notBusc article {
+    display: flex;
+    align-items: center;
+}
+
+section#notPrincDest section#notBusc article img {
+    margin-right: 20px;
+}
+
+/*************************CERRAR SESIÓN****************************/
+article#cerrar{
+    position: relative;
+    width: 10vw;
+    margin-right: 5%;
+}
+div#cerrarSesion {
+    position: absolute;
+    width: 12vw;
+    right: 0;
+    background-color: #16B4DD;
+    border-radius: 4px 0 4px 4px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.21);
+}
+div.usuario:hover {
+    cursor: pointer;
+}
+
+div#cerrarSesion a{
+    color: #fff;
+    display: block;
+}
+/*************MIGAS DE PAN***************************/
+div#migas {
+    margin-top: 20px;
+}
+div#migas ul li {
+    float: left;
+}
+div#migas ul li a {
+    text-decoration: none;
+}
+@media screen and (max-width:850px){
+	
+	header{
+		margin-bottom: 5px;
+	}
+	
+	header h1{
+		margin-bottom: 20px;
+	}
+        
+        header p#inicio {
+            display: block;
+        }
+	
+	header section a:not(#reg):first-child{
+		border-bottom: none;
+		background-color: #fff;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		text-indent: -1500px;
+		border: none;
+		font-size: 1px;
+	}
+	
+	header section a:not(#reg):first-child{
+
+		background-image: url(../IMAGENES/user-symbol.png);
+	}
+	
+	header section a:not(#reg):first-child:hover{
+		background: url(../IMAGENES/user-symbol-white.png) no-repeat;
+		background-color: #009DD9;
+		background-size: 100%;
+		border: none;
+	}
+	
+	/*MENU*/
+
+	 nav{
+		min-width: 200px;/*Hay que poner el min-width en mediaQuery para no alterar el menu al hacer el responsive*/
+		width: 60%;
+		margin: 0;
+		left: -100%;
+		position: absolute;
+	}
+	
+	
+	
+	 nav ul li{
+		display: block;
+		float: none;
+		border-bottom: 1px solid #4B8EA3;
+	}
+	
+	 nav ul li a{
+		font-size:1.2em;
+		width: 100%;
+	}
+	
+	
+	 div.menu a:nth-child(2){
+		display: none;
+	}
+	
+	
+	 div.menu, .menu .letra_menu{
+		display: block;
+		/*width: 100%;*/
+		background-color: #009DD9;
+		padding: 5px;
+		text-decoration: none;
+		color: white;
+		font-size: 1.4em;
+		font-weight: bold;
+	}
+	
+	header section div {
+        width: 40vw;
+    }
+    
+    header section div form input {
+        width: 30vw;
+        font-size: 2.2vw;
+    }
+    
+    header section div form label {
+        font-size: 2.2vw; 
+    }
+
+	
+	/*SUBMENUS*/
+	
+	ul.sub { 
+    position: static;
+    box-shadow: none;
+    width: 100%;
+  }
+  
+  ul.sub li a {
+    background: #009DD9;
+    border: none;
+    color: #fff;
+  }
+  
+  ul.sub li a:hover {
+    color: #fff;
+    background: none;
+  }
+  
+  /**********************NOTICIAS****************************/   
+    section#noticias {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+    
+    section#noticias article img {
+        width: 45vw;
+        height: 26vw;
+    }
+    
+    section#notPrincDest article#notPrinc img#imgPrinc {
+        width: 65vw;
+        height: 38vw;
+    }
+    
+    section#noticias article {
+        width: 45vw;
+    }
+    
+    section#notPrincDest section#notDest {
+        display: none;
+    }
+    
+    section#notPrincDest article#notPrinc h2 {
+        font-size: 4.2vw;
+    }
+    
+    section#notPrincDest article#notPrinc h4 {
+        font-size: 3.5vw;
+    }
+    
+    section#notPrincDest section#noticias article h4 {
+        font-size: 3.2vw;
+    }
+    
+    section#notPrincDest section#noticias article h2 {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width:499px){
+    
+    /***************************Iniciar sesión********************/   
+    header section div {
+        width: 70vw;
+    }
+    
+    header section div form input {
+        width: 55vw;
+        font-size: 3vw;
+    }
+    
+    header section div form label {
+        font-size: 3vw; 
+    }
+    
+    header img#logo{
+        width: 38vw;
+        height: 12vw;
+        margin-top: 0;
+    }
+    
+}
+
+
+
+
+

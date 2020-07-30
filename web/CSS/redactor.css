@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+header div a img#logo {
+        width: 31vw;
+        height: 9vw;
+}
+
+form#editor {
+    background-color: #fafcff;
+    border-bottom-left-radius: 2px;
+    border-left: 7px solid #0076AD;
+    border-bottom-right-radius: 2px;
+    border-bottom: 7px solid #0076AD;
+    border-right: 7px solid #0076AD;
+}
+
+form p:first-child {
+    color: #009DD9;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4vmin;
+    text-transform: uppercase;
+}
+
+label{
+    color: #0076AD;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 0!important;
+}
+
+input{
+    border-color: #4B8EA3 !important;
+   border-radius: 4px !important;
+    border-radius: 0 !important;
+}
+
+input:focus{
+     border-left: 4px solid #0076AD !important;
+         box-shadow: none !important;
+}
+
+
+@media screen and (max-width:590px){
+ header div a img#logo{
+        width: 38vw;
+        height: 12vw;
+        margin-top: 0;
+    } 
+    
+}
